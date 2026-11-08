@@ -62,8 +62,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .top .call{min-height:46px;padding:0 16px;font-size:16px}
 .menu-btn{display:none;width:46px;height:46px;border-radius:10px;border:1.5px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer;align-items:center;justify-content:center}
 .menu-btn svg{width:22px;height:22px}
-@media (max-width:1440px){.top .call .num{display:none}.nav a{padding:8px 9px;font-size:15px}}
-@media (max-width:1240px){.nav{display:none}.top .call{margin-inline-start:auto}.menu-btn{display:inline-flex}.top .call .num{display:inline}}
+@media (max-width:1440px){.top .call .num{display:none}.nav a{padding:8px 7px;font-size:15px}}
+@media (max-width:1320px){.nav{display:none}.top .call{margin-inline-start:auto}.menu-btn{display:inline-flex}.top .call .num{display:inline}}
 @media (max-width:560px){.brand{flex:1 1 auto;min-width:0}.brand small{display:none}.brand b{font-size:23px}.brand img{width:40px;height:40px}.top .wrap{gap:10px}.top .call .lbl,.top .call .num{display:none}.top .call{width:46px;padding:0;flex:none}.menu-btn{flex:none}}
 .drawer{position:fixed;inset:0;z-index:80;background:rgba(3,6,12,.75);display:flex;justify-content:flex-start}
 .drawer[hidden]{display:none!important}
@@ -333,3 +333,17 @@ main:focus{outline:none}
 .legal-doc ul{padding-inline-start:22px}
 .legal-links a{color:var(--muted)}
 .form .privacy-note{font-size:13px;color:var(--muted);margin-top:8px}
+
+/* daycare page */
+.daycare-vid{margin:0;justify-self:center;width:min(100%,380px)}
+.daycare-vid video{display:block;width:100%;aspect-ratio:9/16;border-radius:20px;border:1px solid var(--line);background:#000}
+.daycare-vid figcaption{color:var(--muted);font-size:14px;margin-top:8px;text-align:center}
+.qwrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+.qtable{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;font-size:16px}
+.qtable th{color:var(--muted);font-weight:500;font-size:14px;text-align:start;padding:12px 16px;border-bottom:1px solid var(--line);white-space:nowrap}
+.qtable td{padding:11px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+.qtable .n{text-align:end;white-space:nowrap}
+.qtable tr.sec td{background:var(--panel-2);font-weight:700;color:var(--sig);font-size:14.5px}
+.qtable tr.tot td{font-weight:700}
+.qtable tr.disc td{color:var(--amber);font-weight:700}
+.qtable tr.grand td{background:var(--amber);color:var(--amber-ink);font:700 26px/1.2 var(--display);border-bottom:0}
